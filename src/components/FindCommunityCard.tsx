@@ -21,47 +21,46 @@ const Card: React.FC<TechnologyCardProps> = ({
   property,
 }) => {
   const router = useRouter();
- 
-  if(name != "Hashd0x DAO") {
-      return (
-        <Link href=""
-          className={property}
-          onClick={() => router.push(path)}
-        >        
-          <div className="flex flex-col justify-center">
-            <div className="pb-5">
-              <div className="text-lg text-[20px] font-cy uppercase flex justify-start" style={{color}}>{name}</div>    
-            </div>
-            <div className="pb-5">
-              <div className={styles.description} style={{color}}>{description}</div>
-            </div>
+
+  if (url == "") {
+    return (
+      <Link href=""
+        className={property}
+        onClick={(e) => router.push(path)}
+      >
+        <div className="flex flex-col justify-center">
+          <div className="pb-5">
+            <div className="text-lg text-[20px] font-cy uppercase flex justify-start" style={{ color }}>{name}</div>
           </div>
-          <div className="flex items-center" >
-            <Image src={url} className={styles.communityCardImg} alt="card"></Image>
+          <div className="pb-5">
+            <div className={styles.description} style={{ color }}>{description}</div>
           </div>
-        </Link>
-      )
+        </div>
+      </Link>
+    )
   }
+
   else {
     return (
-        <Link href=""
-          className={property}
-          onClick={(e) => router.push(path)}
-        >        
-          <div className="flex flex-col justify-center">
-            <div className="pb-5">
-              <div className="text-lg text-[20px] font-cy uppercase flex justify-start" style={{color}}>{name}</div>    
-            </div>
-            <div className="pb-5">
-              <div className={styles.description} style={{color}}>{description}</div>
-            </div>
+      <Link href=""
+        className={property}
+        onClick={() => router.push(path)}
+      >
+        <div className="flex flex-col justify-center">
+          <div className="pb-5">
+            <div className="text-lg text-[20px] font-cy uppercase flex justify-start" style={{ color }}>{name}</div>
           </div>
-          <div className="flex items-center" style={{marginLeft:"100px"}}>
-            <Image src={url} className={styles.communityCardImg} alt="card"></Image>
+          <div className="pb-5">
+            <div className={styles.description} style={{ color }}>{description}</div>
           </div>
-        </Link>
-      )
+        </div>
+        <div className="flex items-center" >
+          <Image src={url} className={styles.communityCardImg} alt="card1"></Image>
+        </div>
+      </Link>
+    )
   }
 };
 
 export default Card;
+
