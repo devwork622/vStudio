@@ -1,7 +1,6 @@
 import { type NextPage } from "next";
-import Head from "next/head";
-import Link from "next/link";
-import { Router, useRouter } from "next/router";
+import Image from "next/image";
+import { useRouter } from "next/router";
 import styles from "../../styles/attentionPage.module.scss"
 
 const VselfDaoOther: NextPage = () => {
@@ -11,7 +10,7 @@ const VselfDaoOther: NextPage = () => {
     return (
         <div className={styles.daoPanel}>
             <div className="flex gap-x-24 my-8">
-                <img src="/images/Group 525.png" className={styles.daoAvatar}></img>
+                <Image src="/images/Group 525.png" className={styles.daoAvatar} alt="avatar"></Image>
                 <div>
                     <div className="flex gap-x-10">
                         <h1 className={styles.textHeader}>vSelf DAO</h1>
@@ -32,7 +31,7 @@ const VselfDaoOther: NextPage = () => {
                 </div>
             </div>
             <div className="flex gap-x-24 items-center my-8">
-                <img src="/images/Group 527.png" className={styles.daoBottomAvatar}></img>
+                <Image src="/images/Group 527.png" className={styles.daoBottomAvatar} alt="avatar"></Image>
                 <div>
                     <div className="flex gap-x-10">
                         <h1 className={styles.textHeader}>vSelf Member</h1>

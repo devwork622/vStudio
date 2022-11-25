@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { useRouter } from "next/router";
 import styles from "../styles/card.module.scss";
 
@@ -25,7 +26,7 @@ const Card: React.FC<TechnologyCardProps> = ({
       return (
         <Link href=""
           className={property}
-          onClick={(e) => router.push(path)}
+          onClick={() => router.push(path)}
         >        
           <div className="flex flex-col justify-center">
             <div className="pb-5">
@@ -36,7 +37,7 @@ const Card: React.FC<TechnologyCardProps> = ({
             </div>
           </div>
           <div className="flex items-center" >
-            <img src={url} className={styles.communityCardImg}></img>
+            <Image src={url} className={styles.communityCardImg} alt="card"></Image>
           </div>
         </Link>
       )
@@ -56,7 +57,7 @@ const Card: React.FC<TechnologyCardProps> = ({
             </div>
           </div>
           <div className="flex items-center" style={{marginLeft:"100px"}}>
-            <img src={url} className={styles.communityCardImg}></img>
+            <Image src={url} className={styles.communityCardImg} alt="card"></Image>
           </div>
         </Link>
       )

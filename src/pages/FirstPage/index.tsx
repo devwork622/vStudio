@@ -1,4 +1,6 @@
 import { type NextPage } from "next";
+import Link from "next/link";
+import Image from "next/image";
 import Card from "../../components/Card";
 
 const FirstPage: NextPage = () => {
@@ -21,7 +23,7 @@ const FirstPage: NextPage = () => {
     return (
         <>
             <div className="flex-row flex p-12">
-                <img src='/images/Vector.png' className="vector-img" />
+                <Image src='/images/Vector.png' className="vector-img" alt="vector"/>
                 <div className="vector-text">
                     Try now
                     <div className="triangle"></div>
@@ -32,7 +34,7 @@ const FirstPage: NextPage = () => {
                         vStudio
                     </p>
                     <h4 className="text-[#B1B1B1] text-[20px] font-[800] tracking-[.04em] font-cy">
-                        When privacy <a href="/" className="community-text-link">comes first</a>
+                        When privacy <Link href="/" className="community-text-link">comes first</Link>
                     </h4>
                     <p className="text-[#B1B1B1] community-text-detail text-[20px]">
                         Revolution the way web3 onboarding create private communities where

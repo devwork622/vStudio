@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { useRouter } from "next/router";
+import Image from "next/image";
 import styles from "../styles/card.module.scss";
 
 type TechnologyCardProps = {
@@ -19,7 +19,6 @@ const Card: React.FC<TechnologyCardProps> = ({
   url,
   property,
 }) => {
-  const router = useRouter();
 
   if (tname == "join") {
     return (
@@ -28,7 +27,7 @@ const Card: React.FC<TechnologyCardProps> = ({
         // onClick={(e) => router.push(path)}
       >
         <div className="flex items-center">
-          <img src={url} className={styles.communityCardImg}></img>
+          <Image src={url} className={styles.communityCardImg} alt="card"></Image>
         </div>
         <div className="flex flex-col justify-center">
           <div className="pb-5">
@@ -48,7 +47,7 @@ const Card: React.FC<TechnologyCardProps> = ({
         className={property}
       >
         <div className="flex items-center">
-          <img src={url} className={styles.communityCardImg}></img>
+          <Image src={url} className={styles.communityCardImg} alt="card"></Image>
         </div>
         <div className="flex flex-col justify-center">
           <div className="pb-5">

@@ -1,7 +1,6 @@
 import { type NextPage } from "next";
-import Head from "next/head";
-import Link from "next/link";
-import { Router, useRouter } from "next/router";
+import { useRouter } from "next/router";
+import Image from "next/image";
 import styles from "../../styles/vSelfDao.module.scss"
 
 const VselfDao: NextPage = () => {
@@ -11,7 +10,7 @@ const VselfDao: NextPage = () => {
     return (
         <div className={styles.daoPanel}>
             <div className="flex gap-x-24">
-                <img src="/images/Group 525.png" className={styles.daoAvatar}></img>
+                <Image src="/images/Group 525.png" className={styles.daoAvatar} alt="group"></Image>
                 <div>
                     <div className="flex gap-x-10">
                         <h1 className={styles.textHeader}>vSelf DAO</h1>
@@ -43,7 +42,7 @@ const VselfDao: NextPage = () => {
                             <button type="button" className="w-60 text-white bg-green-400 hover:bg-green-400 text-[16px] focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2  dark:hover:bg-green-700 dark:focus:ring-green-800">Copy</button>
                         </div>
                     </div>                    
-                    <div className="self-end" style={{color: "#3D3D3D"}}>what's memebrship key?</div>
+                    <div className="self-end" style={{color: "#3D3D3D"}}>what&apos;s memebrship key?</div>
                 </div>
             </div>
         </div>

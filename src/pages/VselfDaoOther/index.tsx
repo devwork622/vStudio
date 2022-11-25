@@ -1,7 +1,6 @@
 import { type NextPage } from "next";
-import Head from "next/head";
-import Link from "next/link";
-import { Router, useRouter } from "next/router";
+import { useRouter } from "next/router";
+import Image from "next/image";
 import styles from "../../styles/vSelfDaoOther.module.scss"
 
 const VselfDaoOther: NextPage = () => {
@@ -11,7 +10,7 @@ const VselfDaoOther: NextPage = () => {
     return (
         <div className={styles.daoPanel}>
             <div className="flex gap-x-24">
-                <img src="/images/Group 525.png" className={styles.daoAvatar}></img>
+                <Image src="/images/Group 525.png" className={styles.daoAvatar} alt="group"></Image>
                 <div>
                     <div className="flex gap-x-10">
                         <h1 className={styles.textHeader}>vSelf DAO</h1>
