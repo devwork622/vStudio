@@ -1,0 +1,66 @@
+.daoPanel {
+    background-color: white;
+    border-radius: 16px;
+    padding: 80px 120px;
+}
+
+.daoAvatar {
+    background: #D6FFE9;
+    border-radius: 50%;
+    padding: 20px 30px;
+}
+
+.textHeader {
+    font-size: 20px;
+    font-family: "Cy Grotesk Grand Dark";
+    color: #3D3D3D;
+    font-weight: 800;
+}
+
+.pinkButton {
+    background-color: #FB40FF;
+    border-radius: 30px;
+    padding: 3px 15px;
+    color: white;
+    display: flex;
+    align-items: center;
+
+    p {
+        padding-left: 15px;
+    }
+}
+
+.description {
+    font-size: 16px;
+    color: #3D3D3D;
+    font-weight: 400;
+    padding: 20px 0;
+}
+
+.detail {
+    color: #3D3D3D;
+    ;
+}
+
+.joinForm {
+    display: flex;
+    padding: 100px 50px;
+}
+
+.label {
+    color: #3D3D3D;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* Small (sm) */
+@media (min-width: 640px) { /* ... */ }
+
+/* Medium (md) */
+@media (min-width: 768px) { /* ... */ }
+
+/* Large (lg) */
+@media (min-width: 1024px) { /* ... */ }
+
+/* Extra Large (xl) */
+@media (min-width: 1280px) { /* ... */ }

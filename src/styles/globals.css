@@ -1,0 +1,180 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    height: 100vh;
+    /* background: radial-gradient(ellipse at bottom, #026e38, transparent), linear-gradient(to top, #268756 0%, #262626 -32%); */
+    background-image: url("../../public/images/bg1.png");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 84px 128px;
+}
+
+.margin-0-auto {
+    margin: 0 auto;
+}
+
+.flex-important {
+    display: flex !important;
+}
+
+.font-cy {
+    font-family: "Cy Grotesk Grand Dark";
+}
+
+.community-text-link {
+    text-decoration: underline !important;
+}
+
+.community-text-detail {
+    width: 511px;
+}
+
+.community-card-pink {
+    background-color: #FDA7FF;
+}
+
+.community-card-blue {
+    background-color: #3D50F9;
+}
+
+.community-card-cyan {
+    background-color: #45D9D9;
+}
+
+.community-card-light-cyan {
+    background-color: #01E1FF;
+}
+
+.vector-text {
+    position: relative;
+    background-color: #FB40FF;
+    color: #3D3D3D;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 16px;
+    height: 40px;
+}
+
+.triangle {
+    position: absolute;
+    top: 30px;
+    width: 0;
+    height: 0;
+    border-left: 0px solid transparent;
+    border-right: 35px solid transparent;
+    border-top: 20px solid #FB40FF;
+}
+
+.ribbon-1::before {
+    display: none;
+}
+
+.ribbon-3::before {
+    display: none;
+}
+
+@media screen and (min-width: 1460px) {
+    .ribbon-1::before {
+        content: url("../../public/images/Icon 07.png");
+        position: relative;
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        left: -48px;
+        top: -53px;
+    }
+
+    .ribbon-3::before {
+        content: url("../../public/images/Group 524.png");
+        position: relative;
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        left: -150px;
+        top: -58px;
+    }
+
+    .ribbon-5::before {
+        content: url("../../public/images/Lightning.png");
+        position: relative;
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        right: -200px;
+        top: -58px;
+    }
+}
+
+.ribbon-2::after {
+    display: none;
+}
+
+@media screen and (min-width: 1460px) {
+    .ribbon-2::before {
+        content: url("../../public/images/Color Shape  2.png");
+        position: relative;
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        left: 20px;
+        top: -120px;
+       
+    }
+
+
+    .ribbon-2::after {
+        content: url("../../public/images/Color Shape 1.png");
+        position: relative;
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        left: -60px;
+        top: 90px;
+        z-index: 100;
+    }
+}
+
+.footer {    
+    display: flex;
+    align-items: center;  
+    position: fixed;
+    bottom: 50px;
+    height: 40px;
+    left: 60%;
+    transform: translate(-40%, -50%);  
+}
+
+.footer-items {
+    display: flex;
+}
+
+.text-mark {
+    width: 100px;
+    color: #FFFFFF;
+    opacity: 0.5;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 25px;
+    margin-left: 25rem;
+}
+
+.card {
+    width: 400px;
+    height: 180px;
+}
+
+@media screen and (max-width: 1480px) {
+    .card {
+        width: 340px;
+        height: 180px;
+        margin: 20px 0;
+    }
+
+    .card-section-2 {
+        flex-direction: column;
+    }
+}
